@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="title">Build a Survey Form</h1>
+        <p id="description">We are glad to see you participate in this survey</p>
+    </header>
+    <form action="#" id="survey-form">
+        <div class="container-for-n-e-m">
+            <label for="name" id="name-label">Name</label>
+            <input type="name" id="name" placeholder="Enter your name" required>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <label for="number" id="number-label">Age</label>
+            <input type="number" min="10" max="100" id="number" placeholder="Enter your age" required>
+        </div>
+
+        <div class="dropdown-section">
+            <p>What is your level in MMA?</p>
+            <select name="level" id="dropdown" class="select-css">
+                <option disabled="" selected="" value="">Select your level</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        </div>
+
+        <div class="radio-section">
+            <p>Would you recommend us?</p>
+
+            <div class="radio">
+                <label>
+                    <input name="user-recommend" value="Definitely" type="radio" class="input-radio" checked="">
+                    "Definitely"
+                </label>
+                <label>
+                    <input name="user-recommend" value="Maybe" type="radio" class="input-radio" checked=""> "Maybe"
+                </label>
+                <label>
+                    <input name="user-recommend" value="Not sure" type="radio" class="input-radio" checked=""> "Not
+                    sure"
+                </label>
+            </div>
+
+        </div>
+
+        <div class="mma-shows-section">
+            <p>What is your favorite training session?</p>
+            <select name="role" id="fav-mma-shows" class="select-css">
+                <option disabled="" selected="" value="">Select an option</option>
+                <option value="Heavy Kettlebell High Pull Swings">Heavy Kettlebell High Pull Swings</option>
+                <option value="Rotational Mountain Climbers">Rotational Mountain Climbers</option>
+                <option value="Grasshopper Burpees">Grasshopper Burpees</option>
+                <option value="Dumbbell Side to Side Lunges">Dumbbell Side to Side Lunges</option>
+            </select>
+        </div>
+
+        <div class="mma-fav-section">
+            <p>What would you like to see improved? <span class="clue">(Check all that apply)</span></p>
+
+            <label>
+                <input name="prefer" value="Boxing classes" type="checkbox" class="input-checkbox">Boxing classes
+            </label>
+            <label>
+                <input name="prefer" value="Jiu Jitsu Mat" type="checkbox" class="input-checkbox">Jiu Jitsu Mat
+            </label>
+            <label>
+                <input name="prefer" value="Muay Thai Ring" type="checkbox" class="input-checkbox">Muay Thai Ring
+            </label>
+            <label>
+                <input name="prefer" value="MMA Lockers" type="checkbox" class="input-checkbox">MMA Lockers
+            </label>
+            <label>
+                <input name="prefer" value="Parking Lot" type="checkbox" class="input-checkbox">Parking Lot
+            </label>
+        </div>
+        <div class="textarea-section">
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comment"
+                placeholder="Enter your comment here..."></textarea>
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

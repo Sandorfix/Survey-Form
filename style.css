@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    display: block;
+    min-height: 100vh;
+    font-family: 'Ubuntu Mono', monospace, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.5;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(55,134,175,1) 53%, rgba(0,212,255,1) 100%);
+    background-image: url(/mma.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    
+}
+
+#survey-form p {
+    display: flex;
+}
+
+header.header {
+    margin-top: 2rem;
+}
+
+.header {
+    padding: 20px;  
+}
+
+.header p {
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+#survey-form {
+    padding: 5px; 
+    display: block;
+    max-width: 40%;
+    margin: 0 auto;  
+} 
+
+label, input, p {
+    margin: 0 0 10px;
+}
+
+.container-for-n-e-m {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-for-n-e-m label {
+    display: flex;
+    align-items: flex-start;
+}
+.container-for-n-e-m input {
+    padding: 0.5rem;
+    
+}
+
+#dropdown {
+    display: flex;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.select-css {
+    display: block;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.select-css option{
+    display: block;
+    font-size: 1.2rem;   
+    line-height: 1.2rem; 
+    overflow: hidden;
+}
+
+
+.dropdown-section, .radio-section, .mma-shows-section, .textarea-section, .container-for-n-e-m {
+    margin-top: 1.8rem; 
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+
+#fav-mma-shows {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.mma-fav-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1.8rem;
+}
+
+.input-radio, .input-checkbox {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+textarea {
+    display: flex;
+    width: 100%;
+    min-height: 150px;
+}
+
+.submit-button {
+    margin-top: 10px;
+    width: 100%;
+    font-weight: 900;
+    padding: 0.5rem;
+    margin-bottom: 5rem;
+    background-color: #125B50;
+    border: 1.5px solid #F8B400;
+    border-radius: 5px;
+    color: #F8B400;
+}
+
+
+@media (max-width: 480px) {
+    #survey-form {
+        padding: 5px; 
+        display: block;
+        max-width: 90%;
+        margin: 0 auto;
+    } 
+
+    html, body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;  
+        max-width: 100%;   
+    }
+}
+
+
+@media (min-width: 480px) and (max-width: 960px) {
+    #survey-form {
+        padding: 5px; 
+        display: block;
+        max-width: 70%;
+        margin: 0 auto;
+        
+    } 
+
+    html, body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;  
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1200px) {
+    #survey-form {
+        padding: 5px; 
+        display: block;
+        max-width: 60%;
+        margin: 0 auto;
+    } 
+    html, body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;  
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    #survey-form {
+        padding: 5px; 
+        display: block;
+        max-width: 50%;
+        margin: 0 auto;
+    } 
+
+    html, body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;  
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
